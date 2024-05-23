@@ -1,0 +1,26 @@
+#nav{
+	height: 100px;
+	background: black;
+}
+
+#main{
+	height: 800px;
+	width: 980px;
+	margin: 0 auto;
+	background: red;
+}
+
+#left{
+	height: 100px;
+	background: #bca638;
+}
+
+#right{
+	height: 700px;
+	background: #ffaab7;
+}
+
+#foot{
+	height: 100px;
+	background: black;
+}

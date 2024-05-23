@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<img id="img1" src="/images/1.jpg"/>
+		<img id="img2" src="/images/2.jpg"/>
+		<img id="img3" src="/images/3.jpg"/>
+		<img id="img4" src="/images/4.jpg"/>
+		<script>
+			setInterval(change,2000);//定时调用change函数
+			//定义改变图片的函数
+			function change(){
+				//保存第一张图片
+				var tem=document.getElementById("img1").src;
+				
+				for(var i=1;i<4;i++)
+				{
+					var img1=document.getElementById('img'+i);
+					var img2=document.getElementById('img'+(i+1));
+					//将后一张图片替换前一张
+					img1.src=img2.src;
+				}
+				//最后一张换成第一张
+				document.getElementById("img4").src=tem; 
+			}
+		</script>
+	</body>
+</html>

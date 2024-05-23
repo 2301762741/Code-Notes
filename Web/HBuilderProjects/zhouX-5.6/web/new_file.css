@@ -1,0 +1,60 @@
+#head{
+	height: 900px;
+	border: 1px solid black;
+}
+
+#nav{
+	height: 100px;
+	border: 1px solid black;
+	background-color: #55aa7f;
+}
+
+h1{
+	font:bold 60px 行书;
+	color: #0000ff;
+	text-align: center;
+	letter-spacing: 20px;
+	text-shadow: 5px 5px 3px #ffaa00;
+	margin-top: 18px;
+}
+
+#main ul{
+	margin-top: 30px;
+	margin-left: 120px;
+}
+#main li{
+	float: left;  /* 从左到右排列,不加默认从上向下排 */
+	margin-right: 100px;  /* 外边距 */
+	list-style: none;   /* 去掉点 */
+} 
+#main li:hover{   	/* 鼠标放上变颜色 */
+	background-color: yellow;
+}
+
+#main a{
+	font: 20px 正楷;
+	text-decoration: none;  /* 没有修饰线 */
+	color: black;
+}
+
+#main{
+	height: 800px;
+	border: 1px solid white;
+}
+#main img{
+	width: 978px;
+}
+#main p{
+	text-indent: 2em;
+	font-size: 18px;
+	line-height: 1.5;
+}
+
+#foot{
+	background: burlywood;
+	height: 100px;
+	border: 1px solid white;
+	text-align: center;
+	padding-top: 35px;   /* 页脚文字移动下边 */
+}
+

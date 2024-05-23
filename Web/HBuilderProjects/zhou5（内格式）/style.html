@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<style>
+		*{
+			 color: blue; 
+		}
+		
+		#p1{
+			text-align: left;
+		}
+		#p2{
+			text-align:center;
+		}
+		#p3{
+			text-align: right;
+		}
+		
+		.p1{			
+			text-decoration: overline;    	  /* 上划线 */
+			text-decoration-style: dashed;	  /* 虚线 */	
+			text-decoration-color: red;		  /* 添加下划线颜色 */
+		}
+		.p2{
+			text-decoration: line-through;    /* 删除线 */
+			text-decoration-style: solid;	  /* 实线 */
+			text-decoration-color: rgb(100, 100, 100);
+		}
+		.p3{
+			text-decoration: underline;       /* 下划线 */    
+			text-decoration-style: dotted;	  /* 点线 */
+		}
+		
+		h1{
+			text-transform: capitalize;  /* 每个首字母大写 */
+		}
+		h2{
+			text-transform: uppercase;   /* 全字母大写 */
+		}
+		h3{
+			text-transform: lowercase;   /* 全字母小写 */
+		}
+	</style>
+	<body>
+		<!--默认再全部加上 通配符格式 -->
+		<p id="p1">左对齐</p>
+		<p id="p2">中间对齐</p>
+		<p id="p3">右对齐</p>
+		
+		<p class="p1">上划虚线</p>
+		<p class="p2">删除线实现</p>
+		<p class="p3">下划点线</p>
+		
+		<h1>how are you!</h1>
+		<h2>how are you!</h2>
+		<h3>how are you!</h3>
+		
+	</body>
+</html>
