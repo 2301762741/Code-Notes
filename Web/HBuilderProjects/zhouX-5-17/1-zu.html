@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+
+<script>
+		//创建数组
+		var a=new Array;
+		a[0]=1;
+		a[1]=2;
+		a[2]=a[0]+a[1];
+		document.write(a+'<br>');
+		
+		//多维数组
+		var b=new Array;
+		b[0]=0;
+		b[1]=new Array(1,2);
+		b[2]=new Array('a','b','c');
+		document.write(b+'<br>');
+		
+		//数组初始化赋值
+		var c=[1,2,3,4];
+		d=['小王','男',27];
+		delete(c[2]);
+		document.write(c+'<br>');
+		document.write(d+'<br>');
+		
+		//定义类 对象
+		var stu1={};
+		var stu2={name:'Tom'};
+		var stu3={
+			//属性
+			name:'chenjie',
+			sex:'男',
+			age:20,
+			
+			//方法
+			Myprinf:function(){
+				document.write(stu3.name+' '+stu3.age+'<br>');
+			}
+		};
+		stu3.Myprinf();
+		
+		//封装成字符串对象
+		var str=new String('a',2,10);
+		document.write('str：'+str+'  strlen:'+str.length+'<br>');
+		
+		//数学函数
+		document.write('math: '+Math.max(2,5)+'<br>');
+		document.write('math: '+Math.min(2,5)+'<br>');
+		document.write('math: '+Math.abs(-2)+'<br>');
+		document.write('math: '+Math.random()+'<br>');
+		document.write('math: '+Math.round(24.2)+'<br>');
+		document.write('math: '+Math.pow(2,5)+'<br>');
+		
+		//时间对象
+		var datetime=new Date;
+		document.write('data: '+datetime.getDate()+'<br>')
+		
+		
+</script>

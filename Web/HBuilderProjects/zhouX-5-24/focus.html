@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	</head>
+	<body>
+		姓名：<input type="text"/ name="name">
+		邮箱：<input type="text"/ name="@mail">
+	</body>
+</html>
+<script>
+	$(function(){
+		//获取文本焦点
+		$('input').focus(function(){
+			$(this).css("background-color","#55aa7f");
+		})
+		$('input').blur(function(){
+			$(this).css("background-color","#ffffff");
+		})
+	});
+</script>

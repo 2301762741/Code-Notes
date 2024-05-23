@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	</head>
+	<body>
+		<p>你好</p>
+		<p>网页</p>
+		<p>前段学习</p>
+		<button>按钮</button>
+	</body>
+</html>
+<script>
+	//用匿名函数实现一个功能
+	// $(document).ready(function(){
+	// 	$('p').click(function(){
+	// 		$(this).hide();
+	// 	});
+	// });
+	
+	$(function(){   //同上，加载时运行简洁写法
+	 
+ 	 //	$('p').click(function(){ 	//单机触发
+	 // $('p').dblclick(function(){  //双击触发
+	 //  $('p').mouseenter(function(){  //移入触发
+	 //  $('p').mouseleave(function(){  //移出触发 
+		// 	$(this).hide();  //p标签点击隐藏
+		// });
+	
+		// $('p').hover(  //鼠标时间函数
+		// 	function(){  //移入操作
+		// 		alert("进");
+		// 	} ,
+		// 	function(){  //移出操作
+		// 		alert("出");
+		// 	}
+		// );
+		
+		// $('p').mousedown(  //按下触发
+		// 	function(){  
+		// 		$(this).hide();  //p标签隐藏
+		// 	});
+		// $('p').mouseup(  //松开触发 和上不能同时用不然会冲突
+		// 	function(){  
+		// 	alert("出");
+		// 	}
+		// );
+		
+		$('button').click(function(){
+			$('p').toggle(1000);自动切换隐藏与显示
+		});
+		
+	});
+	
+</script>

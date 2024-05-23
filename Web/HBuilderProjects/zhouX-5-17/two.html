@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			function wopen(){
+				//定义窗口win（ ，名称，大小）
+				win=window.open('','new','width:120,height:100');
+			}
+			function wclose(){
+				 win.close();  //关闭创建的窗口
+			}
+		</script>
+		
+		<a href="http://www.baidu.com" target="new">百度</a>  <!-- 链接到上面窗口 -->
+		<button onclick="wopen()">打开窗口</button>  <!-- 点击调用上面函数 -->
+		<button onclick="wclose()">关闭窗口</button>
+	</body>
+</html>
+<script>
+	//脚本输入
+	a=prompt('请输入名字','张三');
+	
+	//屏幕对象
+	document.write('屏宽：'+screen.width+'<br>');
+	document.write('屏高：'+screen.height+'<br>');
+	document.write('色深：'+screen.colorDepth+'<br>');
+	
+	//打开新一个窗口
+	var win=window.open('','mywin','win');
+	
+	
+	document.write('prompt'+a+'<br>');
+	//document.write('屏宽'+screen.width+'<br>');
+	
+</script>

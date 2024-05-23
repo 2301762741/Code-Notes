@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id='div'>评论区</div>
+		<input type="text" id='input' placeholder="请输入内容"/>
+		<button id='bth' onclick="append()">评论</button>
+	</body>
+</html>
+<script>
+		function append(){
+			//1.获取div元素
+			var div=document.getElementById('div');
+			//获取input
+			var input=document.getElementById('input');
+			//创建节点节点（按需，可单独成行yongappendChild）
+			var node=document.createElement('div');
+			//获取当前节点编号
+			
+			var n=div.childNodes.length;
+			//2.获取新位置编号 与 文本内容
+			var text=document.createTextNode(n+'-'+input.value);
+			
+			//3.通过node添加
+			//node.appendChild(text);
+			//将节点加入div中
+			//div.appendChild(node); //直接加内容无换行div.append(text);
+			//在莫位置添加文本内容
+			div.insertBefore(node,div.childNodes[0]);
+			
+			//替换某位置内容
+			div.replaceChild(text,div.childNodes[0])
+		}
+</script>

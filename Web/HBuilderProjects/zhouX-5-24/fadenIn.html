@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+		div{
+			width: 100px;
+			height: 50px;
+			display: none;
+		}
+		#div1{
+			background-color: aquamarine;
+		}
+		#div2{
+			background-color: bisque;
+		}
+		#div3{
+			background-color: aqua;
+		}
+		</style>
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	</head>
+	<body>
+		<div id="div1"></div>
+		<div id="div2"></div>
+		<div id="div3"></div>
+		<button>按钮</button>
+	</body>
+</html>
+<script>
+	$(function(){
+		$('button').click(function(){
+			//$('#div1').show();//显示
+			//$('#div2').fadeIn(show);//淡入显示，fadeOut淡出
+			//$('#div3').show(1000);//显示
+			
+			$('#div1').fadeToggle();//显示与消失
+			$('#div2').fadeToggle(1000);
+			$('#div3').fadeToggle(5000);
+		});
+	});
+</script>

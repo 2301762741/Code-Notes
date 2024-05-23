@@ -1,9 +1,6 @@
 import java.sql.DriverManager;
-import java.sql.PreparedStatement;
 import java.sql.Connection;
 import java.sql.ResultSet;
-
-
 
 /***********sql代码借鉴JAVA目录下MySQL_Notes**********/
 

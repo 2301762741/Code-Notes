@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+	</head>
+	<body>
+		<h1 class="text">Jquery</h1>
+		<p class="text">你好</p>
+		<p class="p1">隐藏</p>
+		<button id="btn">按钮</button>
+	</body>
+</html>
+<script>
+	$(function(){
+		$('p.p1').hide();
+		
+		$('#btn').click(function(){
+			$('.text').hide(1000);  //同时指定不同标签隐藏
+			$('p.p1').show(1000);  //具体指定标签
+		});
+	});
+</script>
