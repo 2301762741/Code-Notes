@@ -53,4 +53,3 @@ use student;
 
 -- SELECT student.sname FROM student,score where ssex='男' and grade>80
 
-
