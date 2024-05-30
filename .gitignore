@@ -1,5 +1,19 @@
-/*
-!/JAVA/java
+# a全匹配 /a目录匹配 /a/只匹配目录
+#!无法取消父目录的被忽略
+
+/*/*
+!/JAVA/java/
 !/JAVA/MySQL_Notes.md
 !/Web/HBuilderProjects
-!/.gitignore
+!/RTOS/STM32F103工程模板
+/RTOS/STM32F103工程模板/程序工程模板.zip
+/RTOS/STM32 - 快捷方式.lnk
+/RTOS/STM32F103工程模板/Objects
+!/RTOS/STM32F401/
+/RTOS/STM32F401/AAAMainProject
+/RTOS/STM32F401/Fly_uCOS/
+/RTOS/STM32F401/F401购板二.hex
+/RTOS/STM32F401/Fly2.zip
+/RTOS/STM32F401/PlantμC.zip
+/RTOS/STM32F401/Fly2/Objects
+/RTOS/STM32F401/PlantμC/Objects
