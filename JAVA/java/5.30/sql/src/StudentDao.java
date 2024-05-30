@@ -11,7 +11,7 @@ public class StudentDao{
         //装学生的集合对象
         List<Student> list = new ArrayList<Student>();
         //获取链接对象
-        Connection conn = JDCcufils.getConnection();
+        Connection con = JDCcufils.getConnection();
         //根据链接对象创造操作数据库的对象
         Statement stmt = conn.createStatement();
         String sql = "select * from student";
