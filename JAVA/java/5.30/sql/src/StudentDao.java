@@ -13,7 +13,7 @@ public class StudentDao{
         //获取链接对象
         Connection con = JDCcufils.getConnection();
         //根据链接对象创造操作数据库的对象
-        Statement stmt = conn.createStatement();
+        Statement stmt = con.createStatement();
         String sql = "select * from student";
         //根据操作数生成结果集
         ResultSet rs = stmt.executeQuery(sql);
