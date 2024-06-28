@@ -1824,7 +1824,7 @@
       <GroupNumber>8</GroupNumber>
       <FileNumber>130</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Hardware\HMC5883L.c</PathWithFileName>
@@ -1860,7 +1860,7 @@
       <GroupNumber>8</GroupNumber>
       <FileNumber>133</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Hardware\IC.c</PathWithFileName>
@@ -1884,7 +1884,7 @@
       <GroupNumber>8</GroupNumber>
       <FileNumber>135</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Hardware\IIC.c</PathWithFileName>
@@ -1908,7 +1908,7 @@
       <GroupNumber>8</GroupNumber>
       <FileNumber>137</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Hardware\LED.c</PathWithFileName>
@@ -1932,7 +1932,7 @@
       <GroupNumber>8</GroupNumber>
       <FileNumber>139</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
       <PathWithFileName>.\Hardware\MPU6050.c</PathWithFileName>

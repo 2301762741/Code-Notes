@@ -1,0 +1,90 @@
+#container{
+	width: 980px;
+	margin: 0 auto;
+	border: 1px solid white;
+}
+#head{
+	height: 100px;
+	border: 1px solid white;
+	text-align: center;
+	background-color: #aaffff;
+}
+h1{
+	font: bold 50px 楷书;
+	color: #aaaaff;
+	margin-top: 20px;
+	letter-spacing: 20px;
+	text-shadow: 5px 4px 3px #ffaaff;
+}
+#nav{
+	height: 100px;
+	border: 1px solid white;
+	padding-top: 25px;
+	padding-left: 35px;
+}
+#nav li{
+	list-style: none;
+	float:left;
+	margin-right: 220px;
+	text-shadow:4px 3px 2px #00ffff
+}
+#nav a{
+	text-decoration: none;
+	font: bold 30px 楷书;
+	color:#aaaaff
+}
+#nav a:hover{
+	color: #00ff7f;
+}
+#main{
+	height: 800px;
+	border: 1px solid white;
+}
+#main :hover{
+	color: #ffaa7f;
+}
+#left{
+	width: 290px;
+	height: 750px;
+	border: 1px solid white;
+	float: left;
+	margin-right: 30px;
+	background-color: #fff2ec;
+}
+#left img{
+	width: 290px;
+}
+#mid{
+	width: 290px;
+	height: 750px;
+	border: 1px solid white;
+	float: left;
+	margin-right: 30px;
+	background-color: #fff2ec;
+}
+#mid img{
+	width: 290px;
+}
+#right{
+	width: 290px;
+	height: 750px;
+	border: 1px solid white;
+	float:left;
+	background-color: #fff2ec;
+}
+#right img{
+	width: 290px;
+	height: 390px;
+}
+#foot{
+	height: 100px;
+	border: 1px solid white;
+	background-color: #e8e8ae;
+}
+#foot p{
+	text-align: center;
+	font-weight: bold;
+}
+#foot p:hover{
+	color: #ffaa7f;
+}

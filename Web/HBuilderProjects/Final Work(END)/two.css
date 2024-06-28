@@ -1,0 +1,95 @@
+#container{
+	width: 1000px;
+	margin: 0 auto;/* 自动居中 */
+	border: 1px solid white;
+	
+	}
+#head{
+	height: 100px;
+	border: 1px solid white;
+	text-align: center;
+	background-color: #aaffff;
+}
+h1{/* 标题 */
+	font: bold 50px 隶书;
+	color: #00aaff;
+	margin-top: 20px;
+	letter-spacing: 20px;/* 字符间距 */
+	text-shadow: 5px 4px 3px #ffaa7f;/* 文字阴影效果 */
+}
+#nav{
+	height: 100px;
+	border: 1px solid white;
+	padding-top: 25px;
+	padding-left: 35px;/* 左内边距 */
+	background-color: #aaff7f;
+}
+#nav li{/* 后代元素选择器 */
+	list-style: none;/* 去掉前面的点 */
+	float: left;/* 从左到右排列 */
+	margin-right: 80px;
+}
+#nav a{
+	text-decoration: none;/* 去掉超链接的下划线 */
+	font:bold 25px 隶书;/* 字体 */
+}
+#nav a:hover{/* 当鼠标移动到文字上变颜色 */
+	color: #ffaa7f;
+}
+#main{
+	height: 800px;
+	border: 1px solid white;
+}
+#left{
+	width: 300px;
+	height: 750px;
+	border: 1px solid white;
+	float: left;/* 左浮动 */
+	background-color: #00ff7f;
+}
+#left img{
+	width: 300px;
+}
+#left li{
+	list-style: none;/* 去掉前面的点 */
+	margin-left:30px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#left a{
+	text-decoration: none;
+	font: 35px 宋体;
+	border-bottom: 1px solid #ff5500;
+}
+#left a:hover{
+	background-color: #55aa7f;
+	color: white;
+}
+#right{
+	width: 650px;
+	height: 750px;
+	border: 1px solid white;
+	float: right;/* 右浮动 */
+	background-color: #aaff7f;
+}
+#right img{
+	width: 650px;
+}
+#right p{
+	font-size: 20px;
+	text-indent: 2em;
+	line-height: 1.5;
+}
+#foot{
+	clear: both;/* 清除左浮动右浮动 */
+	height: 100px;
+	border: 1px solid white;
+	background-color: #aaaaff;
+}
+#foot p{
+	text-align: center;
+	font-weight: bold;
+}
+#foot p:hover{
+	color: #005500;
+}
