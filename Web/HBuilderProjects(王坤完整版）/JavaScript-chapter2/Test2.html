@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+<script>
+	//变量的作用域
+	var a=10;//定义在函数外，全局变量,作用范围（作用域在全局范围内适用）
+	var b=30;//定义在函数外，全局变量
+	//javascript是弱语言类型，声明函数时不需要指明数据类型，函数（重复执行的动作封装起来）
+	function show(){
+		var a=20;//定义在函数内，局部变量，作用范围（作用域在本函数内适用）
+		console.log('a='+a);//20
+		console.log('b='+b);//30
+	}
+	//必须调用函数，先定义后使用
+	show();
+	console.log('a='+a);//10
+	console.log('b='+b);//30
+	//java中使用final定义常量
+	//final String NAME='huahua';
+	//JavaScript使用const定义常量
+	const PI=3.14;
+	console.log('PI='+PI);
+	//运算符
+	console.log("5>3="+(5>3));
+	console.log("5%3="+(5%3));
+	console.log("5*3="+(5*3));
+	var c=3,d=4;
+	d+=c++;//d=7,c=4.d=d+c,c=c+1;++在后面，先完成数学运算，在执行+1操作
+	console.log('c='+c);//4
+	console.log('d='+d);//7
+	var e=3,f=4;
+	f+=++e;//e=4,f=8.++在前面，先完成+1操作，e=e+1=4.然后f+=e;f=f+e;f=8.
+	console.log('e='+e);//4
+	console.log('f='+f);//8
+	//字符串运算符
+	console.log("I love"+"javaScript");
+	//比较运算符
+	console.log(true==1);//true 因为 == 只比较值，不比较数据类型，因为true在比较时自动转为1
+	console.log(true===1);//false 因为 === 比较值和数据类型，因为true是布尔型，1是数值型，不等
+	console.log(true!==1);//true 因为 === 比较值和数据类型，因为true是布尔型，1是数值型，不等
+	//使用typeof()测试数据类型
+	var i=23;
+	console.log(typeof(i));//number
+	var j="hello";
+	console.log(typeof(j));//string
+	var k=false;
+	console.log(typeof(k));//boolean
+	//条件语句
+	var m=10;
+	if(m>5){
+		document.write('m='+m+"<br>");
+	}else{
+		document.write("BYD数字不对");
+	}
+	var n=5;
+	switch(n){
+		case 1:document.write("周一");break;
+		case 2:document.write("周二");break;
+		case 3:document.write("周三");break;
+		case 4:document.write("周四");break;
+		case 5:document.write("周五");break;
+		default:document.write("周末");break;
+	}
+	document.write('<br>');//换行
+	//循环
+	for(var i=1;i<=10;i++){//外层for循环用于输出行数，1-10行
+		for(var j=1;j<=i;j++){//内层for循环用于输出每一行的*的个数，最多有i个，因为i是行号
+			document.write("*");
+		}
+		//在内层for循环后，也就是每一行的*打印完后，输出的一个换行标记
+		document.write('<br>');//换行
+	}
+</script>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<head>
+		<script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+		</head>
+	</head>
+	<body>
+		<img src="images/1.jpg"/><br />
+		<button id="btn">隐藏/显示</button>
+	</body>
+</html>
+<script>
+	// $(function(){//当页面加载完
+	// //‘隐藏’按钮被单击
+	// 	$('#btn1').click(function(){
+	// 		$('img').hide(5000);//P元素图片隐藏
+	// 	})
+	// 	//显示按钮被单击
+	// 	$('#btn2').click(function(){
+	// 		$('img').show(5000);//P元素图片显示
+	// 	})
+	// });
+	$(function(){
+		$('#btn').click(function(){
+			$('img').toggle(5000);
+		})
+	})
+</script>

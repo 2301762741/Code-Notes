@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jquery/jquery-3.7.1.js"></script>
+	</head>
+	<body>
+		<p>阿米诺斯</p>
+		<ol>
+			<li>阿米诺斯1</li>
+			<li>阿米诺斯2</li>
+			<li>阿米诺斯3</li>
+		</ol>
+		<button id="btn1">添加文字</button>
+		<button id="btn2">添加列表</button>
+	</body>
+</html>
+<script>
+	$(function(){
+		$('#btn1').click(function(){
+			$('p').append('(下面可以添加列表)')//在节点后加
+			$('p').prepend('(需要学习的技术)')//在节点前加
+		})
+		var array=['阿米诺斯4','阿米诺斯5','阿米诺斯6'];
+		// $('#btn2').click(function(){
+		// 	for(var i=0;i<array.length;i++){
+		// 		$('ol').append('<li>'+array[i]+'</li>')//在节点后加
+		// 	}
+		// })  //全部一起加
+		var i=0;
+		$('#btn2').click(function(){
+				$('ol').append('<li>'+array[i++]+'</li>')//在节点后加
+		})  //一个一个加
+	})
+</script>

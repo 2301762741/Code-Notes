@@ -1,0 +1,10 @@
+h1{
+	text-align: center;/* 居中对齐 */
+}
+img{
+	width: 150px;/* 宽 */
+	height: 100px;高
+}
+.p1{/* 类选择器 */
+	background-color: aquamarine;
+}

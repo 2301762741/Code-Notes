@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<p>你喜欢的蔬菜:</p>
+		<div id="div">
+			1.西兰花（请在文本框中添加内容，单机"添加"按钮，可以添加其他蔬菜）
+		</div>
+		<input type="text" id="input" value="请输入内容"/>
+		<button id="btn" onclick="append()">添加</button>
+		<button id="btn" onclick="dele()">删除</button>
+	</body>
+</html>
+<script>
+	function dele(){
+		var div=document.getElementById('div');
+		//删除第一个元素
+		div.removeChild(div.childNodes[0]);
+	}
+	function append(){
+		var div=document.getElementById('div');//获取div
+		var input=document.getElementById('input');//获取input文本框
+		//1.创建一个新的节点
+		var node=document.createElement('div');
+		//2.想在div中后面添加元素，创建一行文本
+		//2.1获取当前将要添加的元素的位置
+		var n=div.childNodes.length+1;
+		//2.2在新的位置n添加文本框的内容
+		var text=document.createTextNode(n+'.'+input.value);
+		//3将内容（text)加入到节点中（node);
+		node.appendChild(text);
+		//4.将节点加入div中
+		div.appendChild(node);
+	}
+</script>

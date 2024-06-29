@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			ul a{/* 后代元素选择器 */
+					/*background:green;*/
+					color: red;
+					text-decoration: none;/* 下划线没有 */
+				}
+				p,h4{/* 多元素选择器 */
+					background: yellowgreen;
+				}
+				ol>li{/* 子元素选择器 */
+					list-style: none;/* 列表项样式 */
+				}
+				#p1+p{/* 之后的同级元素，一个 */
+					color: orange;
+				}
+				#p2~p{/* 之后的同级元素，所有 */
+					color: red;
+				}
+		</style>
+	</head>
+	<body>
+		<ul>
+			<li><a href="#">阿米诺斯1</a></li>
+			<li><a href="#">阿米诺斯2</a></li>
+			<li><a href="#">阿米诺斯3</a></li>
+		</ul>
+		<p>我是你爹</p>
+		<h3>周五</h3>
+		<h4>你好周五</h4>
+		<ol>
+			<li>周一</li>
+			<li>周二</li>
+			<li>周三</li>
+		</ol>
+		<p id="p1">aaa</p>
+		<p>bbb</p>
+		<p>ccc</p>
+		<p id="p2">aaa</p>
+		<p>bbb</p>
+		<p>ccc</p>
+	</body>
+</html>

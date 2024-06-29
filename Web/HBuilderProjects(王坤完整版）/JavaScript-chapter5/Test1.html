@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+<script>
+	//定义学生对象
+	var stu1={};
+	var stu2={name:'Tom'};
+	var stu3={name:'Tom',age:21,sex:'男'};
+	var stu4={
+		//属性
+		name:'Peter',
+		age:21,
+		sex:'男',
+		//方法
+		sayHello:function(){//后面是一个匿名函数，没有名字的函数
+			document.write('hello'+"<br>");
+		}
+	};
+	stu4.sayHello();//小明打招呼
+	document.write('姓名:'+stu4.name+'性别:'+stu4.sex+'年龄:'+stu4.age);
+</script>

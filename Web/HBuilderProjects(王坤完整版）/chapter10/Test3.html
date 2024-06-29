@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			p{/* 设计所有的P元素的样式 */
+				width: 80px;
+				height: 40px;
+			}
+			.p1{
+				border-style: dashed;/* 虚线框 */
+				border-width: 5px;/* 边框厚度 */
+				border-color: #55ff00;
+			}
+			.p2{
+				border-top-style: double;
+				border-right-style: dotted;
+				border-bottom-style: dashed;
+				border-left-style: solid;
+				border-top-width: 1px;
+				border-right-width: 5px;
+				border-bottom-width: 10px;
+				border-left-width: 15px;
+				border-top-color: #00ff00;
+				border-right-color: #ffff00;
+				border-bottom-color: #ffaaff;
+				border-left-color: #00ffff;
+			}
+			.p3{
+				border-style: dashed double;/* 上下，左右 */
+				border-width: 1px 5px 10px;/* 上，左右，下 */
+				border-color: #ff0000 #00ffff #00ff00 #ffff00;/* 上，右，下，左 */
+			}
+			.p4{
+				border: 10px double #aa00ff;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="p1"></p>
+		<p class="p2"></p>
+		<p class="p3"></p>
+		<p class="p4"></p>
+	</body>
+</html>

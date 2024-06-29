@@ -1,0 +1,29 @@
+#p1::first-letter{/* 第一行第一个字 */
+	color: green;
+	font-size: 30px;/* 字体大小 */
+	font-weight: bold;/* 字体粗细 */
+	float: left;/* 浮动在左边 */
+}
+#p1::first-line{/* 第一段第一行文字 */
+	background-color: black;/* 背景 */
+	color: white;/* 白字 */
+}
+p::selection{/* 所有段落中选中的文字 */
+	color: pink;
+}
+li{
+	list-style: none;/* 列表显示的样式没有 */
+}
+li::after{/* 在当前行后设置内容 */
+	content:'(点击获取更多音乐)';
+	color: pink;
+	font-size: 10px;
+}
+li::before{
+	content:'*';
+	color: red;
+	font-size: 30px;
+}
+#p3{
+	line-height: 20px;/* 设置行高 */
+}

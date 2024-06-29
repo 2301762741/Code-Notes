@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<div id="div">
+			1.原始内容，单机按钮添加子节点
+		</div>
+		<input type="text" id="input" placeholder="请输入内容"/>
+		<button id="btn" onclick="append()">按钮</button>
+	</body>
+</html>
+<script>
+	function append(){
+		//1.获取div
+		var div=document.getElementById('div');
+		//2.获取input
+		var input=document.getElementById('input');
+		//3.获取div的节点
+		// var node=document.createElement('div');
+		//4.获取当前节点的编号
+		var n=div.childNodes.length+1;
+		//5.创建将要写的文本
+		var text=document.createTextNode(n+'.'+input.value);
+		//6.通过node添加text
+		// node.appendChild(text);
+		//7.在最前面添加文本内容
+		// div.insertBefore(node,div.childNodes[0]);
+		//8.用新的内容去替换旧的内容
+		div.replaceChild(text,div.childNodes[0]);
+	}
+</script>

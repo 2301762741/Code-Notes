@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#num1,#num2,#num3{
+				width: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<input id="num1" type="text" name="num1"/>
+			+
+			<input id="num2" type="text" name="num2"/>
+			<input id="btn" type="button" name="btn" value="="/>
+			<input id="num3" type="text" name="num3"/>
+		</form>
+	</body>
+</html>
+<script>
+	//加法
+	function add(){
+		//获得第一个数
+		x=document.getElementById("num1").value;
+		//获得第二个数
+		y=document.getElementById("num2").value;
+		//将x和y的值转为数值型，完成两个数相加的和
+		var z=eval(x)+eval(y);//和
+		document.getElementById("num3").value=z;
+	}
+	//给等号添加鼠标单机事件
+	document.getElementById("btn").onclick=add;
+</script>

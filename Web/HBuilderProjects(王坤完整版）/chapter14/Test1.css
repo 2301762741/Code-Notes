@@ -1,0 +1,63 @@
+h1{
+	font-size: 100px;
+}
+#container{
+	width: 980px;/* 宽 */
+	margin: 0 auto;/* 居中对齐 */
+	border: 1px solid black;/* 边框 */
+}
+#head{
+	height: 100px;/* 高 */
+	border: 1px solid white;/* 边框 */
+	background-color: #00ff00;
+}
+h2{
+	font: 50px 隶书;
+	color: #ff0000;
+	text-align: center;/* 居中对齐 */
+	letter-spacing: 20px;/* 字符间距 */
+	text-shadow: 5px 5px 3px #ffff00;/* 阴影 */
+	margin-top: 18px;
+}
+#nav{
+	height: 100px;/* 高 */
+	border: 1px solid white;/* 边框 */
+	background-color: #ff557f;
+}
+ul li{
+	margin-top: 20px;
+	margin-left: 40px;
+}
+#nav li{/* 后代元素选择器 */
+	float: left;/* 从左到右排列 */
+	margin-right: 100px;/* 外右边距 */
+	list-style: none;/* 去掉点 */
+}
+#nav li:hover{
+	background-color: #00ffff;
+}
+#nav a{
+	font: 20px 宋体;
+	text-decoration: none;/* 去掉下划线 */
+	color: #ffffff;
+}
+#main{
+	height: 800px;/* 高 */
+	border: 1px solid white;/* 边框 */
+	background-color: #00ff7f;
+}
+#main img{
+	width: 980px;
+}
+#main p{
+	text-indent: 2em;
+	font-size: 15px;
+	color: #ff0000;
+}
+#foot{
+	height: 100px;/* 高 */
+	border: 1px solid white;/* 边框 */
+	text-align: center;
+	background-color: #ffff7f;
+	padding-top: 35px;
+}

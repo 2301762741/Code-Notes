@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jquery/jquery-3.7.1.js"></script>
+	</head>
+	<body>
+		<button>按钮</button>
+	</body>
+</html>
+<script>
+	$(function(){
+		$('button').click(function(){
+			$.get('./new.php',function(data,status){
+				alert('数据：\n'+data+'\n状态'+status);
+			})
+		})
+	})
+</script>

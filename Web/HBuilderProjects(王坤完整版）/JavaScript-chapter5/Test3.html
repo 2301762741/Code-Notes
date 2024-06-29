@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+<script>
+	//内置对象
+	var d=new String('a',2,10);
+	//打印d的数据类型
+	document.write(typeof(d)+"<br>");//object对象类型
+	//长度
+	document.write(d.length+"<br>");
+	//返回第一个元素
+	document.write('d[0]='+d[0]+"<br>");
+	//数学函数
+	document.write(Math.min(13,2)+"<br>");//最小
+	document.write(Math.max(13,20)+"<br>");//最大
+	document.write(Math.random()+"<br>");//随机数
+	document.write(Math.random(1,10)+"<br>");//1-10的随机数
+	document.write(Math.abs(-4)+"<br>");
+	document.write(Math.round(4.2)+"<br>");
+	document.write(Math.pow(2,3)+"<br>");
+	//日期时间函数
+	var date=new Date();//实例化类生成一个对象
+	//获取年份
+	document.write(date.getFullYear()+'<br>');
+	//获取月份
+	document.write(date.getMonth()+'<br>');
+	//获取日期
+	document.write(date.getDate()+'<br>');
+	//获取星期几
+	document.write(date.getDay()+'<br>');
+	//时
+	document.write(date.getHours()+'<br>');
+	//分
+	document.write(date.getMinutes()+'<br>');
+	//秒
+	document.write(date.getSeconds()+'<br>');
+</script>

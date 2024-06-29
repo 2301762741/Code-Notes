@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<img id="img1" src="images/1.jpg"/>
+		<img id="img2" src="images/2.jpg"/>
+		<img id="img3" src="images/3.jpg"/>
+		<img id="img4" src="images/4.jpg"/>
+		<img id="img5" src="images/5.jpg"/>
+		<img id="img6" src="images/6.jpg"/>
+		<script>
+			//目的：循环播放
+			//指定时间间隔，重复执行一个函数
+			setInterval(change,10);//定时器
+			//定义change函数
+			function change(){
+				//通过img1找到第一个img标签，再通过src属性找到具体的图片
+				var tem=document.getElementById('img1').src;
+				for(var i=1;i<6;i++){//循环6次
+					//将当前图片存下来img1
+					var img1=document.getElementById('img'+i);
+					//将当前位置的后一个位置的图片存下来img2
+					var img2=document.getElementById('img'+(i+1));
+					img1.src=img2.src;//将后一张图片替换前一张图片
+				}
+				//再把第一张图放到第六张的位置
+				document.getElementById('img6').src=tem;
+			}
+		</script>
+	</body>
+</html>

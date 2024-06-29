@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jquery/jquery-3.7.1.js"></script>
+	</head>
+	<body>
+		<div>这是一个网页</div>
+		<button>按钮</button>
+	</body>
+</html>
+<script>
+	$(function(){
+		$('button').click(function(){
+			$('div').load('a.text');
+		})
+	})
+</script>

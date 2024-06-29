@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			input{
+				width: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<input id="num1" type="text" name="num1"/>
+			<select id="calculate">
+				<option value="+">+</option>
+				<option value="-">-</option>
+				<option value="*">*</option>
+				<option value="/">/</option>
+			</select>
+			<input id="num2" type="text" name="num2"/>
+			<input id="btn" type="button" name="btn" value="=" onclick="calu()"/>
+			<input id="num3" type="text" name="num3"/>
+		</form>
+		<script>
+			//处理计算
+			function calu(){
+				//获取第一个数
+				x=eval(document.getElementById('num1').value);
+				//获取第二个数
+				y=eval(document.getElementById('num2').value);
+				//获取运算符
+				cal=document.getElementById('calculate').value;
+				//执行运算
+				switch(cal){
+					case'+':z=x+y;break;
+					case'-':z=x-y;break;
+					case'*':z=x*y;break;
+					case'/':z=(y!=0)? x/y:'除数不能为0';break;
+				}
+				//将结果写入第三个文本框中
+				document.getElementById('num3').value=z;
+			}
+		</script>
+	</body>
+</html>

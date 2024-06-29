@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			* {
+				margin: 0 auto;
+			}
+			form{
+				margin-top: 100px;
+			}
+			caption{
+				font: 35px 隶书;
+				letter-spacing: 15px;/* 字符间距 */
+				color: #55ffff;
+			}
+			tr{
+				height: 50px;/* 行高 */
+			}
+			td{
+				font: 20px 楷体;
+				color: #55ffff;
+			}
+			#end{
+				text-align: center;
+			}
+			#end input{
+				margin-right: 20px;
+				font: bold 20px 宋体;
+				background-color: #ffff7f;
+			}
+			#end input:hover{
+				background-color: #ff0000;/* 鼠标放上去变成红色 */
+			}
+		</style>
+	</head>
+	<body>
+		<form>
+			<table>
+				<caption>登录窗口</caption>
+				<tr>
+					<td>姓名:</td>
+					<td><input type="text" name="user" placeholder="请输入姓名" autofocus /></td>
+				</tr>
+				<tr>
+					<td>密码:</td>
+					<td><input type="password" name="pass" placeholder="请输入密码"/></td>
+				</tr>
+				<tr id="end">
+					<td colspan="2">
+						<input type="submit" name="submit" value="提交" />
+						<input type="reset" name="reset" value="重置" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

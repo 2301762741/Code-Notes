@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jquery/jquery-3.7.1.js"></script>
+	</head>
+	<style>
+		div{
+			width: 200px;
+			border: 1px solid black;
+			background-color: #00ffff;
+			text-align: center;/* 居中对齐 */
+		}
+		#div1{
+			height: 20px;
+		}
+		#div2{
+			height: 50px;
+			display: none;/* 隐藏起来 */
+		}
+	</style>
+	<body>
+		<div id="div1">下拉菜单</div>
+		<!-- <div id="div2">这是内容，阿米诺斯</div> -->
+		<div class="menu">这是内容，阿米诺斯1</div>
+		<div class="menu">这是内容，阿米诺斯2</div>
+		<div class="menu">这是内容，阿米诺斯3</div>
+	</body>
+</html>
+<script>
+	$(function(){//当页面加载完毕
+		$('#div1').click(function(){
+			// $('#div2').slideDown(3000);//第二块的内容缓慢展示出来
+			// $('#div2').slideUp(3000);//第二块的内容缓慢隐藏起来
+			$('.menu').slideToggle(3000);//自动展示或隐藏
+		})
+	})
+</script>

@@ -1,0 +1,29 @@
+#p1{
+	background-color: #ffffff;
+}
+#p2{
+	background-color: #5500ff;
+}
+#p3{
+	background-color: #ff0000;
+}
+#p4{
+	background-color: #00ff00;
+}
+#p5{
+	background-color: #ffff00;
+}
+#p6{
+	background-color: #aaffff;
+}
+#p7{
+	background-color: #aa00ff;
+}
+input{
+	width: 100px;
+	border: 1px solid #aaffff;
+	border-radius: 10px;
+	background-color: #ffaa00;
+	box-shadow: 0 0 3px 3px #ff0000;
+	margin-top: 20px;
+}

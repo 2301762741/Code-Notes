@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jquery-3.7.1.slim.min.js"></script>
+	</head>
+	<body>
+		<h1 class="text">阿米诺斯</h1>
+		<p class="text">这里隐藏</p>
+		<p>这里不隐藏</p>
+		<button>点我啊，笨蛋</button>
+	</body>
+</html>
+<script>
+	$(function(){//当前页面加载
+		$('button').click(function(){//单击按钮
+			$('p.text').hide();
+		})
+	})
+</script>

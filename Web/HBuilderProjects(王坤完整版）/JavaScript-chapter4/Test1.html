@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+</html>
+<script>
+	var a=new Array(3);//3个长度
+	a[0]=1;
+	a[1]=2;
+	a[3]=a[0]+a[1];
+	document.write('a[0]='+a[0]+'<br>');
+	document.write('a[2]='+a[2]+'<br>');
+	document.write('a='+a+'<br>');
+	//多维数组
+	var b=new Array(3);
+	b[0]=2;
+	b[1]=new Array(1,2);//第二个元素的值是一个数组
+	b[2]=new Array('a','b','c');//第三个元素的值是一个数组
+	document.write('b[0]='+b[0]+'<br>');
+	document.write('b[1]='+b[1]+'<br>');
+	document.write('b[2]='+b[2]+'<br>');
+	//第二种方式创建数组
+	var c=[
+		['小王','男','19'],['小芳','女','20'],['小陈','男','20']
+	];
+	document.write('c[0]='+c[0]+'<br>');
+	document.write('c[1]='+c[1]+'<br>');
+	document.write('c[2]='+c[2]+'<br>');
+	//删除第二个学生的信息
+	delete(c[1]);//被删除了
+	document.write('c[1]='+c[1]+'<br>');
+	//添加一条记录
+	c[1]=['小明','男','21'];
+	document.write('c[1]='+c[1]+'<br>');
+	//使用for循环将数组中元素全部打印
+	for(var i=0;i<c.length;i++){
+		document.write('c['+i+']='+c[i]+'<br>');
+	}
+</script>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<link rel="stylesheet" href="Test2.css"/>
+	</head>
+	<body>
+		<h1>三列布局</h1>
+		<div id="container">
+			<div id="head">
+				<h2>荷塘月色</h2>
+			</div>
+			<div id="nav">
+				<ul>
+					<li><a href="a">首页1</a></li>
+					<li><a href="a">首页2</a></li>
+					<li><a href="a">首页3</a></li>
+					<li><a href="a">首页4</a></li>
+				</ul>
+			</div>
+			<div id="main">
+				<div id="left">
+					<p>
+						这几天心里颇不宁静。今晚在院子里坐着乘凉，忽然想起日日走过的荷塘，在这满月
+						的光里，总该另有一番样子吧。月亮渐渐地升高了，墙外马路上孩子们的欢笑，已经听不
+						见了；妻在屋里拍着闰儿，迷迷糊糊地哼着眠歌。我悄悄地披了大衫，带上门出去。
+					</p>
+				</div>
+				<div id="mid">
+					<img id="img1" src="images/1.jpg"/>
+					<img id="img2" src="images/2.jpg"/>
+					<img id="img3" src="images/3.jpg"/>
+					<script>
+						//目的：循环播放
+						//指定时间间隔，重复执行一个函数
+						setInterval(change,100);//定时器
+						//定义change函数
+						function change(){
+							//通过img1找到第一个img标签，再通过src属性找到具体的图片
+							var tem=document.getElementById('img1').src;
+							for(var i=1;i<3;i++){//循环3次
+								//将当前图片存下来img1
+								var img1=document.getElementById('img'+i);
+								//将当前位置的后一个位置的图片存下来img2
+								var img2=document.getElementById('img'+(i+1));
+								img1.src=img2.src;//将后一张图片替换前一张图片
+							}
+							//再把第一张图放到第六张的位置
+							document.getElementById('img3').src=tem;
+						}
+					</script>
+				</div>
+				<div id="right">
+					<div class="card" style="width: 250px;">
+						<img src="images/7.jpg" class="card-img-top"/>
+						<img src="R-C (1).jfif" class="card-img-top"/>
+						<div class="card-body">
+							<h3 class="card-title">荷花</h3>
+							<p class="card-text">荷花信息介绍</p>
+							<button class="btn btn-secondary">按钮</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="foot">
+				<p>
+					版权声明：******
+					联系地址：******
+					联系方式：******
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

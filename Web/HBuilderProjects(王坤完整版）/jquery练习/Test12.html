@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jquery/jquery-3.7.1.js"></script>
+		<style>
+			div{
+				width: 100px;
+				height: 50px;
+				display: none;
+			}
+			#div1{
+				background-color: #00ffff;
+			}
+			#div2{
+				background-color: #ff557f;
+			}
+			#div3{
+				background-color: #55ff00;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1"></div>
+		<div id="div2"></div>
+		<div id="div3"></div>
+		<button id="btn">按钮</button>
+	</body>
+</html>
+<script>
+	$(function(){
+		$('#btn').click(function(){
+			$('#div1').fadeIn();//马上淡入
+			$('#div2').fadeIn('slow');//慢慢淡入
+			$('#div3').fadeIn(5000);//花5秒淡入
+		})
+	})
+</script>

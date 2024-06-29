@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jquery-3.7.1.slim.min.js"></script>
+	</head>
+	<body>
+		<p id="p1">阿米诺斯</p>
+	</body>
+</html>
+<script>
+	// $(function(){//当页面加载
+	// //当鼠标移入P元素时
+	// 	$('#p1').mouseenter(function(){
+	// 		alert('hello');//弹窗
+	// 	})
+	// 	//当鼠标移出P元素时
+	// 	$('#p1').mouseleave(function(){
+	// 		alert('拜拜了您嘞');//弹窗
+	// 	})
+	// })
+	$(function(){
+		$('#p1').hover(
+		//鼠标移入元素
+		function(){
+			alert('你进来了吗？');
+		},
+		//鼠标移出元素
+		function(){
+			alert('啊？你已经结束了？？？');
+		}
+		)
+	})
+</script>

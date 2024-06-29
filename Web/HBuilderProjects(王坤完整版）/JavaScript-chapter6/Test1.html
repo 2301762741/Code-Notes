@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var w;
+			function wopen(){//用于打开窗口
+				//定义了窗口
+				w=window.open('','new','width:120,height:100');
+			}
+			function wclose(){//关闭窗口
+				w.close();//新的小的窗口关闭
+			}
+			//window.close();
+		</script>
+		<a href="http://www.baidu.com" target="new">百度</a>
+		<button onclick="wopen()">打开窗口</button>
+		<button onclick="wclose()">关闭窗口</button>
+	</body>
+</html>
+<script>
+	//prompt('请输入姓名','张三');
+	//获得显示器的信息
+	//document.write('宽:'+screen.width+'<br>');
+	//document.write('高:'+screen.height+'<br>');
+	//document.write('色深:'+screen.colorDepth+'<br>');
+	//打开一个窗口
+	//var win=window.open('','mywin','width:150,height:100');
+</script>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			body{/* 背景色 */
+				background-color: #55aa00;
+			}
+			#container{/* 外围整体边框 */
+				width: 1000px;
+				margin: 0 auto;
+				background-color: #55ff00;
+				border: 1px solid;
+			}
+			#head{/* 头部 */
+				background-image: url("images/banner1.png");
+				height: 200px;
+			}
+			#main{/* 中间区域 */
+				height: 700px;/* 中间区的高度 */
+				background-color: #00ff7f;
+			}
+			#left{/* 左边区域 */
+				width: 200px;
+				height: 700px;
+				background-color: #aaff7f;
+				float: left;/* 浮动在左边，从左到右对齐 */
+			}
+			#right{/* 右边区域 */
+				width: 800px;
+				height: 700px;
+				background-color: #ffffff;
+				float: left;/* 浮动在左边，从左到右对齐 */
+			}
+			#foot{/* 尾部 */
+				height: 200px;
+				background-color: #aaff00;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="container">
+			<div id="head"></div>
+			<div id="main">
+				<div id="left"></div>
+				<div id="right"></div>
+			</div>
+			<div id="foot"></div>
+		</div>
+	</body>
+</html>

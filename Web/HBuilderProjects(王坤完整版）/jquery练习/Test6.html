@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jquery-3.7.1.slim.min.js"></script>
+	</head>
+	<body>
+		<p>aaaaa</p>
+		<p>bbbbb</p>
+		<p>ccccc</p>
+	</body>
+</html>
+<script>
+	$(function(){//当前页面加载时
+		//当双击P元素时
+		$('p').dblclick(function(){
+			//当前的元素会隐藏
+			$(this).hide();
+		})
+	})
+</script>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jquery/jquery-3.7.1.js"></script>
+	</head>
+	<style>
+		div{
+			background-color: #00aa00;
+		}
+	</style>
+	<body>
+		<div>
+			<p>阿米诺斯1</p>
+			<p>阿米诺斯2</p>
+		</div>
+		<button>按钮</button>
+	</body>
+</html>
+<script>
+	$(function(){
+		$('button').click(function(){
+			//$('div').remove();//删除
+			$('div').empty();//清空
+		})
+	})
+</script>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			#show{
+				/* font-size: 20px; */
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="show">阿米诺斯</div>
+		<button id="btn" onclick="changesize()">按钮</button>
+		<br />
+		<script>
+			//定义一个方法，实现div中的文字变化
+			function changesize(){
+				var div=document.getElementById('show');
+				div.style.color='green';
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jquery/jquery-3.7.1.js"></script>
+		<style>
+			table,td{
+				border: 1px solid black;
+				border-collapse: collapse;/* 线框合并 */
+			}
+			.head{/* 首行的颜色 */ 
+				background-color: #9c9c9c;
+			}
+			.even{/* 偶数行是蓝色 */
+				background-color: #0085c8;
+			}
+			.over{/* 光标移动到当前行，当前行变成橙色 */
+				background-color: #ffe0ac;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<table>
+				<tr>
+					<td>学号</td>
+					<td>姓名</td>
+					<td>年龄</td>
+				</tr>
+				<tr>
+					<td>001</td>
+					<td>小张</td>
+					<td>19</td>
+				</tr>
+				<tr>
+					<td>002</td>
+					<td>小陈</td>
+					<td>20</td>
+				</tr>
+				<tr>
+					<td>003</td>
+					<td>小王</td>
+					<td>18</td>
+				</tr>
+				<tr>
+					<td>004</td>
+					<td>小黄</td>
+					<td>20</td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>
+<script>
+	$(function(){
+		//设置首行的颜色
+		$('table tr:first').addClass('head');
+		//设置偶数行颜色，除开0行
+		$('table tr:even:not(:first)').addClass('even');
+		//设置移动到当前行，当前行变色
+		$('table tr:not(:first)').mouseover(function(){
+			$(this).addClass('over');//鼠标移动当前行
+		}).mouseout(function(){
+			$(this).removeClass('over');
+		})
+	})
+</script>

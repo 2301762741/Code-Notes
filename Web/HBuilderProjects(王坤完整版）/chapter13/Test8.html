@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			div {
+				width: 200px;
+				height: 100px;
+				border: 1px solid #ff557f;
+				margin: 20px;
+			}
+			.p1,.p4,.p7{
+				width: 20px;
+				height: 5px;
+				border: 1px solid #00ff00;
+			}
+			.p2,.p5,.p8{
+				width: 50px;
+				height: 5px;
+				border: 1px solid #00ff00;
+			}
+			.p3,.p6,.p9{
+				width: 80px;
+				height: 5px;
+				border: 1px solid #00ff00;
+			}
+			#div2>p{/* 父子元素选择器 */
+				float: left;/* 浮动在左边 */
+			}
+			#div3 .p7{
+				float: left;/* 浮动在左边 */
+			}
+			#div3 .p8,#div3 .p9{
+				float: right;/* 浮动在右边 */
+			}
+		</style>
+	</head>
+	<body>
+		<div id="div1">
+			<p class="p1"></p>
+			<p class="p2"></p>
+			<p class="p3"></p>
+		</div>
+		<div id="div2">
+			<p class="p4"></p>
+			<p class="p5"></p>
+			<p class="p6"></p>
+		</div>
+		<div id="div3">
+			<p class="p7"></p>
+			<p class="p8"></p>
+			<p class="p9"></p>
+		</div>
+	</body>
+</html>

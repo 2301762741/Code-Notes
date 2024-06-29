@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jquery/jquery-3.7.1.js"></script>
+	</head>
+	<body>
+		<p>JAVA是一门<b>编程语言</b></p>
+		<button id="btn1">显示文字</button>
+		<button id="btn2">显示html</button>
+	</body>
+</html>
+<script>
+	$(function(){//当页面加载时
+		$('#btn1').click(function(){
+			//显示P元素的文字
+			alert('Test:'+$('p').text());
+		})
+		$('#btn2').click(function(){
+			//显示P元素的文字
+			alert('Test:'+$('p').html());
+		})
+	})
+</script>

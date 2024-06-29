@@ -1,0 +1,30 @@
+body{
+	width: 1000px;/* 设置网页的宽 */
+	margin: 0 auto;/* 设置外边距，上下为0，左右平均分配 */
+}
+h1{
+	text-align: center;/* 文字居中对齐 */
+}
+#p1{
+	text-align: center;/* 文字居中对齐 */
+	color: pink;/* 字体颜色 */
+	}
+#p2~p{/* 除了第一段后的所有段落 */
+	text-indent: 2em;/* 段落首行缩进两个字符 */
+	}
+#p2::first-letter{/* 第一段的第一个字*/
+	font-size: 30px;/* 字体大小 */
+	font-weight: bold;/* 加粗 */
+	float: left;/* 左对齐 */
+	}
+p::selection{/* 当段落中有文字选中时 */
+	background-color: black;/* 背景 */
+	color: white;/* 文字颜色 */
+	}
+#p4::after{
+	content: '(间隔 一作：隔绝)';
+	color: red;
+	}
+img{
+	width: 1000px;
+	}

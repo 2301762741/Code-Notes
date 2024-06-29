@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jquery-3.7.1.slim.min.js"></script>
+	</head>
+	<body>
+		<p id="p1">阿米诺斯</p>
+	</body>
+</html>
+<script>
+	$(function(){
+		//当鼠标移到元素时，按下按钮
+		$('#p1').mousedown(function(){
+			alert('鼠标按下了');
+		});
+		//当鼠标在元素松开按钮时
+		$('#p1').mouseup(function(){
+			alert('鼠标松开了');
+		})
+	})
+</script>

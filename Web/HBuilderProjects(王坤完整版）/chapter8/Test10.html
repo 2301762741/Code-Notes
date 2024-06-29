@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			a[href]{
+				color: red;
+			}
+			p[id^="user"]{/* 前缀匹配 */
+				color: pink;
+			}
+			p[id$="1"]{/* 后缀匹配 */
+				color: blue;
+			}
+		</style>
+	</head>
+	<body>
+		<a href="http://www.baidu.com">百度</a>
+		<p id="username">张三</p>
+		<p id="usersex">男</p>
+		<p id="pass">123</p>
+		<p id="user1">jack</p>
+		<p id="user1">peter</p>
+	</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style>
+			table,td,th{
+				border: 3px solid green;
+				border-collapse: collapse;/* 线框合并 */
+			}
+			table{
+				margin: 0 auto;/* 表格盒子外边距上下为0，左右平均分配，呈现居中效果 */
+			}
+			caption{
+				font: 50px 隶书;
+				color: #ff0000;
+			}
+			caption:hover{
+				background-color: #0055ff;
+				color: #ffffff;
+			}
+			td,th{
+				width: 100px;
+				height: 100px;
+				color: #55ffff;
+				text-align: center;/* 居中对齐 */
+				font:  25px 宋体 ;
+			}
+			tr:hover{/* 伪类选择器 */
+				background-color: #ffff00;/* 只要鼠标经过，当前行的背景为黄色 */
+			}
+		</style>
+	</head>
+	<body>
+		<table>
+			<caption>学生成绩表</caption>
+			<tr>
+				<th>学号</th>
+				<th>姓名</th>
+				<th>分数</th>
+			</tr>
+			<tr>
+				<td>001</td>
+				<td>小张</td>
+				<td>90</td>
+			</tr>
+			<tr>
+				<td>002</td>
+				<td>小王</td>
+				<td>100</td>
+			</tr>
+			<tr>
+				<td>003</td>
+				<td>小李</td>
+				<td>95</td>
+			</tr>
+		</table>
+	</body>
+</html>

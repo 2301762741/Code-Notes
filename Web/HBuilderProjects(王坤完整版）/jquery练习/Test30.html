@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jquery/jquery-3.7.1.js"></script>
+	</head>
+	<style>
+		body{
+			text-align: center;
+		}
+		#big{
+			height: 400px;
+		}
+		#big~img{
+			height: 400px;
+		}
+		#small{
+			height: 50px;
+		}
+		#small~img{
+			width: 50px;
+			height: 50px;
+		}
+	</style>
+	<body>
+		<div id="big">
+			<img src="images/1.jpg" class="img1"/>
+		</div>
+		<div id="small">
+			<img src="images/1.jpg" class="img"/>
+			<img src="images/2.jpg" class="img"/>
+			<img src="images/3.jpg" class="img"/>
+			<img src="images/4.jpg" class="img"/>
+			<img src="images/5.jpg" class="img"/>
+		</div>
+	</body>
+</html>
+<script>
+	$(function(){
+		$('.img').click(function(){//当鼠标在图片悬停时
+			var src=$(this).attr('src');//获取小图的src图片资源
+			$('.img1').attr('src',src);//小图的src图片资源写进大图的src
+			$('.img1').css({width:'400px'});//设置大图的样式
+		})
+	})
+</script>

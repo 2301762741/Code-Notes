@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			//数学计算函数
+			//alert(eval(30+3));
+			console.log(escape("helloworld"));
+			console.log(unescape("helloworld"));
+			//判断是否是数字
+			console.log(isNaN(23));//false
+			console.log(isNaN("abc"));//true
+			//判断是否是浮点数
+			console.log(parseFloat(12.5));
+			//确定函数
+			//var a=confirm('确定吗');
+			//document.write(a);
+			//prompt()函数,会显示输入框,等待用户输入
+			//var a=prompt('请输入一个数：','imput here');
+			//document.write(a);
+			//自定义函数
+			function sum(){
+				return "hello";
+			}
+			//调用函数
+			document.write(sum());
+			function add(x,y){//参数不需要声明数据类型
+				document.write(x+y);
+			}
+			add(12,2);
+		</script>
+	</body>
+</html>

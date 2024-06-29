@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<form action="" method="post">
+			<fieldset>
+				<legend>学生信息表</legend>
+			姓名:<input type="text" name="username" placeholder="请输入姓名" autofocus required/><br />
+			密码:<input type="password" name="password" placeholder="请输入密码" required/><br />
+			性别:<input type="radio" name="sex" value="男"/>男
+			性别:<input type="radio" name="sex" value="女"/>女<br />
+			爱好:<input type="checkbox" name="hobby" value="basketball"/>basketball
+			爱好:<input type="checkbox" name="hobby" value="sing"/>sing
+			爱好:<input type="checkbox" name="hobby" value="dance"/>dance
+			爱好:<input type="checkbox" name="hobby" value="game"/>game
+			爱好:<input type="checkbox" name="hobby" value="老八汉堡"/>老八汉堡<br />
+			请上传照片:<input type="file" name="photo"/><br />
+			个人简介:<textarea name="info" rows="5" cols="20"></textarea><br />
+			请选择你喜欢的科目
+			<select><!-- 单选 -->
+				<option value="C++">C++</option>
+				<option value="JAVA">JAVA</option>
+				<option value="HTML">HTML</option>
+			</select>
+			<select multiple><!-- 多选 -->
+				<option value="C++">C++</option>
+				<option value="JAVA">JAVA</option>
+				<option value="HTML" selected>HTML</option>
+			</select ><br />
+			请选择你需要的网站:<input type="url" list="myaddress" name="address"/><br />
+			<datalist id="myaddress">
+				<option label="taobao" value="www.taobao.com"></option>
+				<option label="W3cSchool" value="www.W3cSchool.com"></option>
+				<option label="baidu" value="www.baidu.com"></option>
+			</datalist><br />
+			请输入网站:<input type="url" name="url" placeholder="请输入网站"/><br />
+			请输入邮箱:<input type="email" name="email" placeholder="请输入邮箱"/><br />
+			请选择生日:<input type="date"/><br />
+			请选择时刻:<input type="time"/><br />
+			请选择时间:<input type="datetime" placeholder="请输入时间"/><br />
+			请选择时间:<input type="datetime-local"/><br />
+			数字:<input type="range" min="5" max="1000" step="5" value="0"/><br />
+			数字:<input type="number" min="5" max="1000" step="5" value="0"/><br />
+			颜色:<input type="color" name="color"/><br />
+			<input type="submit" name="submit" value="提交"/>
+			<input type="reset" name="reset" value="重置"/><br />
+			<input type="image" src="submit.jpg" width="200px" height="100px"/>
+			</fieldset>
+		</form>
+	</body>
+</html>

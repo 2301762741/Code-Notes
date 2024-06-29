@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script src="jquery/jquery-3.7.1.js"></script>
+	</head>
+	<body>
+		<a href="http://www.baidu.com">百度</a>
+		<button id="btn">按钮</button>
+	</body>
+</html>
+<script>
+	$(function(){
+		$('#btn').click(function(){
+			alert($('a').attr('href'));//显示网址
+		})
+	})
+</script>
